@@ -1,0 +1,6 @@
+{
+  "name": "Computer Science Learning Academy",
+  "description": "An interactive EdTech platform with theory, instant interactive quizzes, a personalized user dashboard, and AI-powered practice sessions for Computer Science technologies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,65 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user tracking information, current XP, and learning progress",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The unique user ID" },
+        "displayName": { "type": "string", "description": "The user's display name" },
+        "email": { "type": "string", "description": "The user's email address" },
+        "photoURL": { "type": "string", "description": "User profile picture thumbnail URL" },
+        "xp": { "type": "integer", "description": "Total experience points earned" },
+        "streak": { "type": "integer", "description": "Consecutive days active" },
+        "level": { "type": "integer", "description": "Calculated user level" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Time the profile was created" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "Time the profile was last updated" }
+      },
+      "required": ["userId", "displayName", "email", "xp", "streak", "level", "createdAt"]
+    },
+    "QuizSubmission": {
+      "title": "Quiz Submission",
+      "description": "History of quizzes undertaken by the user with score achieved",
+      "type": "object",
+      "properties": {
+        "submissionId": { "type": "string", "description": "Unique ID of the submission" },
+        "userId": { "type": "string", "description": "The ID of the user who completed the quiz" },
+        "domainId": { "type": "string", "description": "The high-level technology domain ID" },
+        "topicId": { "type": "string", "description": "The specific topic ID" },
+        "score": { "type": "integer", "description": "Score achieved (e.g., 80)" },
+        "totalQuestions": { "type": "integer", "description": "Total number of questions" },
+        "correctAnswers": { "type": "integer", "description": "Number of correct answers" },
+        "completedAt": { "type": "string", "format": "date-time", "description": "When the quiz was finished" }
+      },
+      "required": ["submissionId", "userId", "domainId", "topicId", "score", "totalQuestions", "correctAnswers", "completedAt"]
+    },
+    "SavedNote": {
+      "title": "Saved Note",
+      "description": "Custom CS notes or explanations saved by the user from AI responses",
+      "type": "object",
+      "properties": {
+        "noteId": { "type": "string", "description": "Unique note ID" },
+        "userId": { "type": "string", "description": "User ID of the owner" },
+        "title": { "type": "string", "description": "The note title" },
+        "concept": { "type": "string", "description": "The concept name or topic" },
+        "explanation": { "type": "string", "description": "Detailed notes body in markdown" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the note was saved" }
+      },
+      "required": ["noteId", "userId", "title", "concept", "explanation", "createdAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile data, tracked per user ID"
+    },
+    "users/{userId}/quizSubmissions/{submissionId}": {
+      "schema": "QuizSubmission",
+      "description": "Quiz attempts by a specific user"
+    },
+    "users/{userId}/savedNotes/{noteId}": {
+      "schema": "SavedNote",
+      "description": "Saved CS concepts and references"
+    }
+  }
+}

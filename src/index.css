@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+/* ====================================================
+   CS Academy - High-Contrast Pristine White Theme
+   ==================================================== */
+
+body, html, #root {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Set core dark structural containers to elegant clean light blocks */
+.bg-slate-950,
+.bg-slate-900,
+.bg-slate-900\/50,
+.bg-slate-900\/40,
+.bg-slate-950\/20,
+.bg-slate-950\/40,
+.bg-slate-800\/80,
+.bg-slate-800\/40,
+.bg-slate-800\/50,
+.bg-slate-800,
+div[id$="-view"],
+div[id$="-dashboard"],
+main.relative {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+}
+
+/* Brighten inner background panels */
+.bg-slate-950\/40,
+.bg-slate-950\/20,
+.bg-slate-900\/60,
+.bg-slate-950\/80,
+.bg-slate-950/20,
+.bg-slate-950/40,
+.bg-slate-950/80 {
+  background-color: #f8fafc !important;
+}
+
+/* Make sure borders look clean, light and professional instead of dark lines */
+.border-slate-800,
+.border-slate-800\/80,
+.border-slate-800\/60,
+.border-slate-700,
+.border-slate-700\/50,
+.border-slate-700\/55,
+.border-slate-600,
+.border-slate-900 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Ensure rich typography is deep slate for excellent readability */
+.text-white,
+.text-slate-100,
+.text-slate-200,
+h1, h2, h3, h4, h5, h6 {
+  color: #0f172a !important;
+}
+
+.text-slate-300,
+.text-slate-400 {
+  color: #475569 !important;
+}
+
+.text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Retain high quality active theme branding */
+.text-indigo-400, .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+.text-cyan-400, .text-cyan-500 {
+  color: #0891b2 !important;
+}
+.text-purple-400, .text-purple-300 {
+  color: #7c3aed !important;
+}
+.text-amber-400, .text-amber-500, .text-orange-400 {
+  color: #d97706 !important;
+}
+
+/* Interactive navigation button color adjustments */
+.hover\:bg-slate-800:hover,
+.hover\:bg-slate-800\/80:hover,
+.hover\:text-white:hover {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* Keep terminal inputs, editor zones, and compiler prompts crisp, dark and highly visible */
+pre,
+code,
+textarea,
+main .font-mono {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+pre code,
+pre span {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Keep action buttons and active overlays correct */
+button.bg-indigo-600,
+button.bg-indigo-500,
+a.bg-indigo-600 {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+}
+
+button.bg-indigo-600:hover,
+button.bg-indigo-500:hover {
+  background-color: #4338ca !important;
+}
+
+/* Ensure correct and wrong feedback states remain clear in light mode */
+.bg-emerald-950\/40,
+.bg-emerald-900\/20 {
+  background-color: #ecfdf5 !important;
+  border-color: #10b981 !important;
+  color: #065f46 !important;
+}
+.text-emerald-400 {
+  color: #059669 !important;
+}
+
+.bg-red-950\/40,
+.bg-red-900\/20 {
+  background-color: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #991b1b !important;
+}
+.text-red-400 {
+  color: #dc2626 !important;
+}
+
+/* ====================================================
+   Blue Theme Navigation Bar (Overrides Light Mode)
+   ==================================================== */
+#academy-navbar {
+  background-color: #1e3a8a !important; /* Solid Beautiful Royal Blue */
+  border-bottom-color: #2563eb !important; /* Vibrant Blue Border */
+  color: #ffffff !important;
+}
+
+#academy-navbar span,
+#academy-navbar div,
+#academy-navbar p {
+  color: #ffffff !important;
+}
+
+#academy-navbar .text-slate-900,
+#academy-navbar .text-slate-800,
+#academy-navbar .text-slate-600,
+#academy-navbar .text-slate-500 {
+  color: #eff6ff !important; /* Gentle light sky blue */
+}
+
+#academy-navbar .text-indigo-600,
+#academy-navbar .text-indigo-700 {
+  color: #bfdbfe !important; /* Soft sky blue */
+}
+
+/* Desktop Navigation Link buttons */
+#academy-navbar button[id^="nav-btn-"],
+#academy-navbar a[id^="nav-btn-"] {
+  color: #e0f2fe !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+
+#academy-navbar button[id^="nav-btn-"]:hover,
+#academy-navbar a[id^="nav-btn-"]:hover {
+  background-color: #1e40af !important; /* Darker blue-800 hover block */
+  color: #ffffff !important;
+}
+
+/* Active navigation states styling */
+#academy-navbar button.bg-indigo-600\/10,
+#academy-navbar button[class*="text-indigo-700"] {
+  background-color: #2563eb !important; /* Vibrant high-contrast blue */
+  border-color: #60a5fa !important;
+  color: #ffffff !important;
+}
+
+/* Profile information box: Level / Streak */
+#academy-navbar .bg-slate-50,
+#academy-navbar .bg-slate-100,
+#academy-navbar .border-slate-200 {
+  background-color: #1e40af !important;
+  border-color: #3b82f6 !important;
+}
+
+/* Gold, streak icons or dynamic state colors */
+#academy-navbar .text-orange-655,
+#academy-navbar .text-orange-600,
+#academy-navbar .text-orange-500 {
+  color: #fbbf24 !important; /* Warm beautiful gold */
+}
+
+#academy-navbar .text-indigo-600 {
+  color: #93c5fd !important;
+}
+
+/* Start/Get Started premium buttons */
+#academy-navbar button.bg-indigo-600,
+#academy-navbar button.bg-indigo-500 {
+  background-color: #f59e0b !important; /* Warm brand amber action */
+  color: #0f172a !important;
+  border: none !important;
+}
+
+#academy-navbar button.bg-indigo-600:hover,
+#academy-navbar button.bg-indigo-500:hover {
+  background-color: #d97706 !important;
+}
+
+/* Mobile Nav Drawer inside the navbar scope */
+#academy-navbar .md\:hidden {
+  background-color: #1e3a8a !important;
+  border-top-color: #2563eb !important;
+}
+
+#academy-navbar .md\:hidden button {
+  color: #93c5fd !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+#academy-navbar .md\:hidden button.text-indigo-400,
+#academy-navbar .md\:hidden button.text-cyan-400,
+#academy-navbar .md\:hidden button.text-amber-400,
+#academy-navbar .md\:hidden button.text-purple-400 {
+  color: #ffffff !important;
+}
+
