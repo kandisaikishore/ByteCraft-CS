@@ -1,51 +1,29 @@
 # ByteCraft CS
 
-**An AI Studio application starter in the computer-science and software-learning space.**
+An AI Studio application starter in the computer-science and software-learning space.
 
-## Overview
+## Project overview
 
-This repository contains the application source and local development setup. This README is intended to help developers and reviewers understand the project, run it locally, and assess its current scope without overstating unverified capabilities.
+The repository includes app source and a local npm workflow. Check the current code to confirm the available learning modules, tools, and AI integrations.
 
-## Highlights
-
-- CS-focused application UI
-- Local development with npm
-- Configuration for supported AI features
-
-## Technology
-
-Node.js · npm · Gemini API (where configured)
-
-## Quick start
-
-Prerequisite: a compatible Node.js installation. From a terminal:
+## Getting started
 
 ```bash
- git clone https://github.com/saikishore2410/ByteCraft-CS.git
- cd ByteCraft-CS
- npm install
-# Add GEMINI_API_KEY to .env.local if required
-npm run dev
+git clone https://github.com/saikishore2410/ByteCraft-CS.git
+cd ByteCraft-CS
+npm install
 ```
 
-Configure environment variables locally before launching the app. Use the variable names expected by the current source code, and keep real credentials out of version control.
+Set required environment variables locally. If Gemini features are enabled, place the API key in `.env.local` and do not commit it. Run the development and build commands defined in `package.json`.
 
-## Build and validation
+## Validation
 
-```bash
-npm run build
-```
+Execute the available tests, lint checks, and production build. Document any limits on generated explanations or content.
 
-Run any test or lint scripts defined in `package.json`. Review the source and deployment configuration before treating the application as production-ready.
+## Contributions
 
-## Configuration and limitations
-
-Confirm the exact learning modules and AI capabilities in source before describing them as implemented.
-
-## Contributing
-
-Issues and focused pull requests are welcome. Include reproduction steps for bugs and describe the validation performed for changes.
+Issues and pull requests that improve learning clarity, accessibility, reliability, and maintainability are welcome.
 
 ## License
 
-No license is specified. Add a `LICENSE` file to define permitted reuse.
+No license is specified. Add a `LICENSE` file before granting reuse rights.
