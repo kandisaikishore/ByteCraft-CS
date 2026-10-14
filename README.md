@@ -1,47 +1,37 @@
 # ByteCraft CS
 
-## Live Demo / Deployment URL
+[![Source](https://img.shields.io/badge/Source-GitHub-181717?logo=github)](https://github.com/kandisaikishore/ByteCraft-CS) [![Last Commit](https://img.shields.io/github/last-commit/kandisaikishore/ByteCraft-CS)](https://github.com/kandisaikishore/ByteCraft-CS/commits/main)
 
-**Deployment URL:** Not verified yet. Add the confirmed public application URL here after checking the live service. The GitHub repository link is not a deployment URL.
+ByteCraft CS is a computer-science learning and project repository intended to turn core concepts into practical examples. It can serve as a portfolio of implementations, notes, and experiments across software engineering topics.
 
+## Learning goals
 
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/saikishore2410/ByteCraft-CS) [![Issues](https://img.shields.io/github/issues/saikishore2410/ByteCraft-CS)](https://github.com/saikishore2410/ByteCraft-CS/issues) [![Last Commit](https://img.shields.io/github/last-commit/saikishore2410/ByteCraft-CS)](https://github.com/saikishore2410/ByteCraft-CS/commits/main)
-
-> An AI Studio application starter in the computer-science and software-learning space.
-
-## At a glance
-
-- **Purpose:** Use the feature and scope sections below to understand the problem this project addresses.
-- **Getting started:** Follow the repository-specific setup instructions and verify commands against the current source and package scripts.
-- **Configuration:** Keep API keys, database credentials, tokens, and private user data out of commits; configure secrets locally.
-- **Quality checks:** Run the available build, test, and lint commands before submitting changes.
-
-
-
-An AI Studio application starter in the computer-science and software-learning space.
-
-## Project overview
-
-The repository includes app source and a local npm workflow. Check the current code to confirm the available learning modules, tools, and AI integrations.
+- Practise core computer-science concepts through code
+- Improve clarity, correctness, and maintainability of examples
+- Keep explanations and source code connected
+- Build a structured reference that developers can navigate easily
 
 ## Getting started
 
 ```bash
-git clone https://github.com/saikishore2410/ByteCraft-CS.git
+git clone https://github.com/kandisaikishore/ByteCraft-CS.git
 cd ByteCraft-CS
-npm install
 ```
 
-Set required environment variables locally. If Gemini features are enabled, place the API key in `.env.local` and do not commit it. Run the development and build commands defined in `package.json`.
+Explore the directories and follow the run instructions for the selected exercise. Install only the prerequisites listed by that example, and avoid assuming that all examples share one runtime.
 
-## Validation
+## Contribution guidelines
 
-Execute the available tests, lint checks, and production build. Document any limits on generated explanations or content.
+When adding an example, include its purpose, algorithm or concept, complexity notes where useful, and clear run instructions. Add boundary-case tests and note any constraints.
 
-## Contributions
+## Learning roadmap
 
-Issues and pull requests that improve learning clarity, accessibility, reliability, and maintainability are welcome.
+- Add focused explanations for each concept
+- Include examples with edge cases
+- Provide tests or expected outputs
+- Organize work by topic and difficulty
+- Track sources and licenses for any reused material
 
 ## License
 
-No license is specified. Add a `LICENSE` file before granting reuse rights.
+Review the repository's current licensing terms before reusing or redistributing examples.
